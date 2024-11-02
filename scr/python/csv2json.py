@@ -19,7 +19,7 @@ def make_json(csvFilePath, jsonFilePath):
     # function to dump data
     with open(jsonFilePath, 'w', encoding='utf-8') as jsonf:
         #jsonf.write(json.dumps(data, indent=4))
-        json.dump(data, jsonf, indent=4)
+        json.dump(data, jsonf, ensure_ascii=False, indent=4)
          
 # Driver Code
  
